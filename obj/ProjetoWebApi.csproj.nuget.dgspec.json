@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\buzzy\\OneDrive\\Documentos\\ProjetoWebApi\\ProjetoWebApi.csproj": {}
+    "c:\\Users\\buzzy\\OneDrive\\Documentos\\ProjetoWebApi\\ProjetoWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\buzzy\\OneDrive\\Documentos\\ProjetoWebApi\\ProjetoWebApi.csproj": {
+    "c:\\Users\\buzzy\\OneDrive\\Documentos\\ProjetoWebApi\\ProjetoWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\buzzy\\OneDrive\\Documentos\\ProjetoWebApi\\ProjetoWebApi.csproj",
+        "projectUniqueName": "c:\\Users\\buzzy\\OneDrive\\Documentos\\ProjetoWebApi\\ProjetoWebApi.csproj",
         "projectName": "ProjetoWebApi",
-        "projectPath": "C:\\Users\\buzzy\\OneDrive\\Documentos\\ProjetoWebApi\\ProjetoWebApi.csproj",
+        "projectPath": "c:\\Users\\buzzy\\OneDrive\\Documentos\\ProjetoWebApi\\ProjetoWebApi.csproj",
         "packagesPath": "C:\\Users\\buzzy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\buzzy\\OneDrive\\Documentos\\ProjetoWebApi\\obj\\",
+        "outputPath": "c:\\Users\\buzzy\\OneDrive\\Documentos\\ProjetoWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\buzzy\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -49,7 +49,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

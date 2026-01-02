@@ -1,4 +1,4 @@
-<h2>1. Tecnologias e Dependências</h2>
+<h2>🛠️ 1. Tecnologias e Dependências</h2>
 O projeto utiliza as seguintes bibliotecas e ferramentas:
 
 - Framework: .NET 8.0.
@@ -9,7 +9,7 @@ O projeto utiliza as seguintes bibliotecas e ferramentas:
 
 - Swashbuckle.AspNetCore (v6.8.1): Implementação do Swagger para documentação e testes da API.
 
-<h2>2. Configuração da Base de Dados.</h2>A ligação à base de dados é definida no ficheiro appsettings.json através da string de conexão AppDbConnectionString:
+<h2>💾 2. Configuração da Base de Dados.</h2>A ligação à base de dados é definida no ficheiro appsettings.json através da string de conexão AppDbConnectionString:
 
 - Servidor: localhost.
 
@@ -21,7 +21,7 @@ O projeto utiliza as seguintes bibliotecas e ferramentas:
 
 - A configuração no Program.cs utiliza o método UseMySql com deteção automática da versão do servidor para inicializar o AppDbContext.
 
-<h2>3. Modelo de Dados</h2>
+<h2>👤 3. Modelo de Dados</h2>
 O núcleo da aplicação é a classe Personagem, que define as propriedades e regras de validação:
 
 - Id: Identificador único (Chave Primária).
@@ -30,21 +30,21 @@ O núcleo da aplicação é a classe Personagem, que define as propriedades e re
 
 - Tipo: Campo obrigatório com o máximo de 50 caracteres.
 
-<h2>4. Endpoints da API (PersonagensController)</h2>
+<h2>🌐 4. Endpoints da API</h2>
 Todos os endpoints estão acessíveis através da rota base api/Personagens. Operações CRUD:
 
-- Listar Todos (GET): GET /api/Personagens: Retorna a lista de todos os personagens registados na tabela DBZ.
+- GET - /api/Personagens: Retorna a lista de todos os personagens registados na tabela DBZ.
 
-- Obter por ID (GET): GET /api/Personagens/{id}: Procura um personagem específico. Retorna "Personagem não encontrado" (404) caso não exista.
+- GET - /api/Personagens/{id}: Procura um personagem específico. Retorna "Personagem não encontrado" (404) caso não exista.
 
-- Adicionar (POST): POST /api/Personagens: Recebe um objeto Personagem no corpo da requisição. Valida o estado do modelo antes de guardar e retorna o status 201 (Created) em caso de sucesso.
+- POST - /api/Personagens: Recebe um objeto Personagem no corpo da requisição. Valida o estado do modelo antes de guardar e retorna o status 201 (Created) em caso de sucesso.
 
-- Atualizar (PUT): PUT /api/Personagens/{id}: Atualiza os valores de um personagem existente com base no ID fornecido.
+- PUT - /api/Personagens/{id}: Atualiza os valores de um personagem existente com base no ID fornecido.
 
-- Eliminar (DELETE): DELETE /api/Personagens/{id}: Remove o registo do personagem da base de dados e confirma a exclusão com uma mensagem de sucesso.
+- DELETE - /api/Personagens/{id}: Remove o registo do personagem da base de dados e confirma a exclusão com uma mensagem de sucesso.
 
-<h2>5. Funcionalidades de Desenvolvimento</h2>
-Swagger/OpenAPI: Em ambiente de desenvolvimento, a API disponibiliza uma interface visual (Swagger UI) para exploração e teste dos endpoints.
+<h2>⚙️ 5. Funcionalidades de Desenvolvimento</h2>
+Swagger: Em ambiente de desenvolvimento, a API disponibiliza uma interface visual (Swagger UI) para exploração e teste dos endpoints.
 
 - Segurança: O pipeline inclui suporte para redirecionamento HTTPS e middleware de autorização (UseAuthorization).
 
